@@ -1,28 +1,19 @@
 <script setup lang="ts">
-import SicebarNav from "./components/NavBar/SicebarNav.vue";
+import SidebarNav from "./components/NavBar/SidebarNav.vue";
 </script>
 
 <template>
-  <main>
-    <SicebarNav>
-      <RouterView />
-    </SicebarNav>
+  <main class="main">
+    <SidebarNav>
+      <div class="layout-main-container p-4 w-full relative">
+        <RouterView />
+      </div>
+    </SidebarNav>
   </main>
-
-  <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
 
 <style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+.main {
+  overflow: hidden;
 }
 </style>

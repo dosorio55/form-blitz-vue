@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { defineProps } from "vue";
-import AppSVGIcons from "../assets/icons";
+import AppSVGIcons from "./icons";
 
 interface IconHandlerProps {
   iconName: keyof typeof AppSVGIcons;
