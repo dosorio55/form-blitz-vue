@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { defineProps } from "vue";
 import IconHandler from "../../assets/IconHandler.vue";
 import AppSVGIcons from "../../assets/icons";
 

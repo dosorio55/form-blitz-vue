@@ -3,24 +3,13 @@
     class="h-full overflow-auto p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700"
   >
     <FormSwitcher />
-    <CircularButton icon-name="Plus" ref="buttonRef" />
-    <!-- <Dropdown :element-ref="buttonRef" v-if="dropdownOpen" /> -->
-    {{ dropdownOpen }}
+    <FormPlusButton icon-name="Plus"  />
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-import CircularButton from "../ui/CircularButton.vue";
+import FormPlusButton from "./FormPlusButton.vue";
 import FormSwitcher from "./FormSwitcher.vue";
-import Dropdown from "../ui/Dropdown.vue";
-
-const dropdownOpen = ref(false);
-const buttonRef = ref(null);
-
-const handleClick = () => {
-  dropdownOpen.value = !dropdownOpen.value;
-};
 </script>
 
 <style scoped>
