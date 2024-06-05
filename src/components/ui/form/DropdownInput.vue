@@ -1,9 +1,9 @@
 <template>
   <div class="relative">
-    <label
+    <p
       for="input-type"
       class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-      >Select an input type</label
+      >Select an input type</p
     >
     <div class="relative" @click="handleOpenDropdown" ref="inputDropdownRef">
       <input
@@ -13,6 +13,7 @@
         placeholder="Simple input"
         readonly
         :value="selectedValue"
+        
       />
       <svg
         xmlns="http://www.w3.org/2000/svg"
